@@ -1,0 +1,83 @@
+<!-- Flag Slideshow Section -->
+<section class="flag-slider">
+    <h1>GLOBAL PRESENCE</h1>
+    <div class="slideshow-container">
+        <div class="slider">
+            <div class="slide"><img class="flag" src="./flags/botswana.jpg" alt="Botswana"></div>
+            <div class="slide"><img class="flag" src="./flags/lesotho.jpg" alt="Lesotho"></div>
+            <div class="slide"><img class="flag" src="./flags/mocoq.jpg" alt="Mozambique"></div>
+            <div class="slide"><img class="flag" src="./flags/na.jpg" alt="Namibia"></div>
+            <div class="slide"><img class="flag" src="./flags/swa.jpg" alt="Swaziland"></div>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Slideshow Container */
+    .slideshow-container {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .slider {
+        display: flex;
+        width: 500%;
+        animation: slide 25s infinite linear;
+    }
+
+    .slide {
+        width: 100%;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        animation: fade 25s infinite linear;
+    }
+
+    .flag {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* CSS Animation for Sliding */
+    @keyframes slide {
+        0% { transform: translateX(0%); }
+        20% { transform: translateX(-100%); }
+        40% { transform: translateX(-200%); }
+        60% { transform: translateX(-300%); }
+        80% { transform: translateX(-400%); }
+        100% { transform: translateX(0%); }
+    }
+
+    /* Fade Effect */
+    @keyframes fade {
+        0% { opacity: 1; }
+        15% { opacity: 1; }
+        30% { opacity: 0; }
+        100% { opacity: 0; }
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 600px) {
+        .flag {
+            width: 80px;
+            height: 80px;
+        }
+    }
+
+    @media (min-width: 601px) and (max-width: 1024px) {
+        .flag {
+            width: 90px;
+            height: 90px;
+        }
+    }
+
+    @media (min-width: 1025px) {
+        .flag {
+            width: 100px;
+            height: 100px;
+        }
+    }
+</style>

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website with Hero Section</title>
+    <link rel="stylesheet" href="./nav/nav.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 50px;
+            background-image: url("./Photos/Stringing/Complete overhead pole 1280 x 960.jpg");
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .hero h2 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+        .hero p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: auto;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .main_photo {
+            margin-top: 20px;
+        }
+        .mn-img img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 8px;
+        }
+
+        /* Field of Operation Section */
+        .operation-field {
+            padding: 40px;
+            background: rgb(164, 255, 110);
+                border-radius: 11px;
+;
+        }
+        .operation-field h1 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .field-container {
+            display: grid;
+            gap: 20px;
+        }
+        .operation-item {
+            color: #fff;
+            background: black;
+            padding: 15px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .operation-item img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 8px;
+        }
+
+        .field_img{
+            background: fixed;
+        }
+
+        /* Major Projects Section */
+        .major-projects {
+            padding: 40px;
+            background: blackks;
+        }
+        .major-projects h1 {
+        color: #fff;
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .project-list {
+            list-style: none;
+            max-width: 800px;
+            margin: auto;
+            font-size: 1.2em;
+        }
+        .project-list li {
+            padding: 10px;
+            background: rgb(164, 255, 110);
+            margin-bottom: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Responsive Grid */
+        @media (max-width: 600px) {
+            .field-container {
+                grid-template-columns: 1fr;
+            }
+            .hero {
+                padding: 20px;
+            }
+        }
+        @media (min-width: 601px) and (max-width: 1024px) {
+            .field-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (min-width: 1025px) {
+        
+            .drop_menu{
+                width: 40vw;
+                
+            }
+            .nav-links{
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+            .field-container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+           /* Slideshow Container */
+    .slideshow-container {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .slider {
+        display: flex;
+        width: 500%;
+        animation: slide 52s infinite ease-in;
+    }
+
+    .slide {
+        width: 100%;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        animation: fade 25s infinite linear;
+    }
+
+    .flag {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* CSS Animation for Sliding */
+    @keyframes slide {
+        0% { transform: translateX(0%); }
+        20% { transform: translateX(-100%); }
+        40% { transform: translateX(-200%); }
+        60% { transform: translateX(-300%); }
+        80% { transform: translateX(-400%); }
+        100% { transform: translateX(0%); }
+    }
+
+    /* Fade Effect */
+    @keyframes fade {
+        0% { opacity: 1; }
+        15% { opacity: 1; }
+        30% { opacity: 1; }
+        100% { opacity: 1; }
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 600px) {
+        .flag {
+            width: 80px;
+            height: 80px;
+        }
+    }
+
+    @media (min-width: 601px) and (max-width: 1024px) {
+        .flag {
+            width: 90px;
+            height: 90px;
+        }
+    }
+
+    @media (min-width: 1025px) {
+        .flag {
+            width: 100px;
+            height: 100px;
+        }
+    }
+        /* Responsive Footer */
+        .footer {
+            background-color: #426e28;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 40px;
+        }
+        .footer h1 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+        .footer p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: auto;
+            padding: 10px;
+        }
+        .btn {
+            display: inline-block;
+            background: #000;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background: #444;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 600px) {
+            .footer h1 {
+                font-size: 1.5em;
+            }
+            .footer p {
+                font-size: 1em;
+            }
+            .btn {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="logo/CELL120.png" alt="cell logo">
+        </div>
+        <div class="company_name">
+            <h1>CENTURION ELECTRICAL LINES (PTY)LTD</h1>
+        </div>
+        <div class="drop_menu">
+            <button class="menu">menu</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services/services.html">Services</a></li>
+                <li><a href="about/About.html">About</a></li>
+                <li><a href="contact/contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+     
+
+    <!-- Hero Section -->
+
+    <div class="hero">
+        <h1>Delivering Power</h1>
+        <h2>Overhead Transmission Line Specialist</h2>
+        <p>CELL has its roots founded in the design and construction space of overhead transmission lines and substations in Sub-Saharan Africa.The company was founded in 2025 by Rufus M.
+                Kgoatlha who holds experience and expertise in the design, development, investigations and
+                construction Of overhead transmission lines ranging from 11kV to 765kV.</p>
+            <p>
+                Contributing to the sustainable development of Sub-Saharan countries by adding value to the
+                design and construction of energy infrastructure. Cell forges ahead while still rooted in its core
+                values of ethics, safety, environmental compliance, and product quality
+            </p>
+
+        <div class="main_photo">
+            <div class="mn-img">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Field of Operation Section -->
+<section class="operation-field">
+    <h1>FIELD OF OPERATION</h1>
+    <div class="field-container">
+        <div class="operation-item">
+            <div class="field_img">
+            <img src="Photos/Pole  top inspections/Pole inspection 400 x300png.png" alt="Tower Erection">
+            </div>
+            <h2>Tower Erection</h2>
+            <p>Tower erection by mobile crane | Gin-Pole | Helicopter | Tower Assembly.</p>
+        </div>
+
+        <div class="operation-item">
+            <div class="field_img">
+            <img src="Photos/Stringing/Stringing best pic 400 x 960.png" alt="Stringing">
+            </div>
+            <h2>Stringing</h2>
+            <p>Stringing conductors using machines and manual techniques.</p>
+        </div>
+
+        <div class="operation-item">
+            <div class="field_img">
+            <img src="Photos/refurbishment/new tower legs  400 x 960.png" alt="Line Rehabilitation">
+            </div>
+            <h2>Line Rehabilitation</h2>
+            <p>Design and installation of soil retaining structures, bush clearing.</p>
+        </div>
+
+        <div class="operation-item">
+            <div class="field_img">
+            <img src="Photos/refurbishment/new tower legs  400 x 960.png" alt="Refurbishment">
+            </div>
+            <h2>Refurbishment</h2>
+            <p>Stabilizing failed structures | repairing failed structures and foundations.</p>
+        </div>
+
+        <div class="operation-item">
+            <div class="field_img">
+            <img src="./Photos/Tower erection/tower erection with holes digged on it  960 x 1280.jpg" alt="Foundations">
+            </div>
+            <h2>Foundations</h2>
+            <p>Foundation designs | Line surveying | V-block setting out | Concreting | Foundation repairs.</p>
+        </div>
+    </div>
+</section>
+        <!-- Major Projects Section -->
+        <section class="major-projects">
+            <h1>MAJOR PROJECTS</h1>
+            <div class="project-container">
+                <ul class="project-list">
+                   <li>Medupi - Witkop 400kv SEC D LINE (Construction management services).</li>
+                    <li>Arnot-Kruispunt 275kv OHL pole top inspection.</li>
+                    <li>Benburg-Esselen 275kv OHL pole top inspection.</li>
+                    <li>Matimba-Witkop 400kv OHL pole top inspection.</li>
+                    <li>Medupi-Witkop 400kv SEC D LINE (2D & 3D LINE MODELING).</li></ul>
+            </div>
+        </section>
+    </div>
+    <!-- Flag Slideshow Section -->
+<section class="flag-slider">
+    <h1>GLOBAL PRESENCE</h1>
+    <div class="slideshow-container">
+        <div class="slider">
+            <div class="slide"><img class="flag" src="./flags/botswana.jpg" alt="Botswana"></div>
+            <div class="slide"><img class="flag" src="./flags/lesotho.jpg" alt="Lesotho"></div>
+            <div class="slide"><img class="flag" src="./flags/mocoq.jpg" alt="Mozambique"></div>
+            <div class="slide"><img class="flag" src="./flags/na.jpg" alt="Namibia"></div>
+            <div class="slide"><img class="flag" src="./flags/swa.jpg" alt="Swaziland"></div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <h1>Power Your Projects Seamlessly</h1>
+    <p>
+        Enhance your infrastructure with expertly designed electrical lines from Centurion Electrical Lines
+        in Midrand. Trust our certified professionals for reliable and efficient service.
+    </p>
+    <a class="btn btn-dark btn-sm" href="https://wa.me/27796241479" role="button">Whatsapp</a>
+</footer>
+
+</body>
+</html>
