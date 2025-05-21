@@ -33,6 +33,6 @@
 .mn-img img{
     width: 100%; 
     height: auto;
-    min-height: 300px;
+    min-height: auto;
 min-width: 300px;
 }
