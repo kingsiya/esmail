@@ -1,6 +1,7 @@
-  /* Global Styles */
+    
+        /* Global Styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family:Arial, Helvetica, sans-serif;
             margin: 0;
             padding: 0;
             background-color: black;
@@ -25,7 +26,7 @@
             margin-bottom: 10px;
         }
         .hero h2 {
-            font-size: 1.8em;
+            font-size: 1.8em; 
             margin-bottom: 15px;
         }
         .hero p {
@@ -36,19 +37,17 @@
             padding: 15px;
             border-radius: 10px;
         }
-        .main_photo {
-            margin-top: 20px;
-        }
-        .mn-img img {
-            width: 100%;
-            max-width: 600px;
-            border-radius: 8px;
-        }
+        
+
+/* This media query applies styles when the screen width is 768px or less */
+    
 
         /* Field of Operation Section */
         .operation-field {
             padding: 40px;
-            background: white;
+            background: rgb(164, 255, 110);
+                border-radius: 11px;
+;
         }
         .operation-field h1 {
             text-align: center;
@@ -60,7 +59,8 @@
             gap: 20px;
         }
         .operation-item {
-            background: white;
+            color: #fff;
+            background: black;
             padding: 15px;
             text-align: center;
             border-radius: 10px;
@@ -70,14 +70,19 @@
             width: 100%;
             max-width: 300px;
             border-radius: 8px;
+            min-height: 300px;}
+
+        .field_img{
+            background: fixed;
         }
 
         /* Major Projects Section */
         .major-projects {
             padding: 40px;
-            background: #eaeaea;
+            background: blackks;
         }
         .major-projects h1 {
+        color: #fff;
             text-align: center;
             font-size: 2em;
             margin-bottom: 20px;
@@ -90,7 +95,7 @@
         }
         .project-list li {
             padding: 10px;
-            background: white;
+            background: rgb(164, 255, 110);
             margin-bottom: 10px;
             border-radius: 8px;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -111,6 +116,7 @@
             }
         }
         @media (min-width: 1025px) {
+        
             .drop_menu{
                 width: 40vw;
                 
@@ -135,7 +141,7 @@
     .slider {
         display: flex;
         width: 500%;
-        animation: slide 20s infinite linear;
+        animation: slide 52s infinite ease-in;
     }
 
     .slide {
@@ -178,7 +184,7 @@
             height: 80px;
         }
     }
-
+/* the style of the flags in 600px - 1024px */
     @media (min-width: 601px) and (max-width: 1024px) {
         .flag {
             width: 90px;
@@ -192,9 +198,10 @@
             height: 100px;
         }
     }
+    
         /* Responsive Footer */
         .footer {
-            background-color: #333;
+            background-color: #426e28;
             color: white;
             text-align: center;
             padding: 30px;

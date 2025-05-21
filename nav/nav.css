@@ -1,67 +1,76 @@
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 15px;
+    color: white;
+}
+
+.logo img {
+    width: clamp(80px, 15vw, 13vw);
+    height: auto;
+}
+
+.company_name h1 {
+    text-align: center;
+    font-size: 1.7em;
+    margin: 0;
+}
+
+.drop_menu {
+    position: relative;
+}
+
+.menu {
+    background: #555;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    padding: 5px;
+}
 
 
+/* Mobile Navigation */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
 
-        /* Navigation Bar */
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: black;
-            padding: 15px;
-            color: white;
-        }
-        .logo img {
-            width: clamp(80px , 15vw , 13vw);
-            height: auto;
-        }
-        .company_name h1 {
-            text-align: center;
-            font-size: 1.7em;
-            margin: 0;
-        }
-        .drop_menu {
-            position: relative;
-        }
-        .menu {
-            background: #555;
-            color: white;
-            padding: 10px;
-            border: none;
-            cursor: pointer;
-        }
-        .nav-links {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            gap: 15px;
-        }
-        .nav-links li {
-            display: inline;
-        }
-        .nav-links a {
-            text-decoration: none;
-            color: white;
-            font-size: 1.2em;
-            padding: 5px;
-        }
-        /* Hide Menu Button on Desktop */
+    .nav-links {
+        flex-direction: column;
+        display: none;
+    }
+
+    .drop_menu:hover .nav-links {
+        display: flex;
+    }
+
+}
+
+/* Hide Menu Button on Desktop */
 @media (min-width: 1025px) {
     .menu {
         display: none;
     }
 }
-
-        /* Mobile Navigation */
-        @media (max-width: 768px) {
-            nav {
-                flex-direction: column;
-                text-align: center;
-            }
-            .nav-links {
-                flex-direction: column;
-                display: none;
-            }
-            .drop_menu:hover .nav-links {
-                display: flex;
-            }
-        }   
