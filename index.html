@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Website with Hero Section</title>
+    <title>Home</title>
     <link rel="stylesheet" href="./nav/nav.css">
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="scn_size.css">
+
 <link rel="stylesheet" href="images.css">
 </head>
 <body>
+<div id="my_width"></div>
 
     <!-- Navigation Bar -->
     <nav>
@@ -19,7 +22,7 @@
             <h1>CENTURION ELECTRICAL LINES (PTY)LTD</h1>
         </div>
         <div class="drop_menu">
-            <button class="menu">menu</button>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="services/services.html">Services</a></li>
@@ -43,9 +46,9 @@
                 design and construction of energy infrastructure. Cell forges ahead while still rooted in its core
                 values of ethics, safety, environmental compliance, and product quality
             </p>
-
+<br><br>
             <div class="main_photo">
-                <div class="mn-img"><img src="./Photos/Stringing/Stringing best pic 400 x 960.png" alt="">
+                <div class="mn-img"><img src="Photos/Stringing/Complete overhead pole 1280 x 960.jpg" alt="">
                 </div>
             </div>
     </div>
@@ -132,4 +135,5 @@
 </footer>
 
 </body>
+<script src="scn-size.js"></script>
 </html>

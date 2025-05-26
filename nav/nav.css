@@ -20,12 +20,22 @@ nav {
 }
 
 .drop_menu {
+    background-color: #6de21a;
     position: relative;
+        position: fixed;
+    left: 72%;
+    top: 44%;
 }
 
-.menu {
-    background: #555;
-    color: white;
+
+.menu-toggle {
+
+    font-size: 7vw;
+    font-weight: 910;
+    text-shadow: 2px -2px 25px yellow;
+
+    color: #0b0b0b;
+    background: #1d400a;
     padding: 10px;
     border: none;
     cursor: pointer;
@@ -62,15 +72,39 @@ nav {
         display: none;
     }
 
-    .drop_menu:hover .nav-links {
-        display: flex;
-    }
+    .menu-toggle {
+        position: fixed;
+        align-self: center;
+        box-sizing: border-box;
+        top: 82vh;
+        right: 1%;
+        height: 19%;
+        text-align: end;
+        clip-path: circle(1.2rem at 50% 34%);
+        transform: scale(1);
 
+        font-size: 7vw;
+        font-weight: 910;
+        text-shadow: 2px -2px 25px yellow;
+        color: rgb(80 78 82);
+        background: #61e01c;
+        /* padding: 10px; */
+        border: none;
+        cursor: pointer;
+    }
 }
+
+.drop_menu:hover .nav-links {
+    display: flex;
+    position: relative;
+    top: 1px;
+}
+
+
 
 /* Hide Menu Button on Desktop */
 @media (min-width: 1025px) {
-    .menu {
+    .menu-toggle {
         display: none;
     }
 }

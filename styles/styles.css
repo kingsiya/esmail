@@ -1,137 +1,166 @@
-    
-        /* Global Styles */
-        body {
-            font-family:Arial, Helvetica, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: black;
+    /* Global Styles */
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: black;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+    }
+
+    /* Hero Section */
+    .hero {
+        text-align: center;
+        padding: 50px;
+        background-image: url("./Photos/Stringing/Complete overhead pole 1280 x 960.jpg");
+        background-size: cover;
+        background-position: center;
+        color: white;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+    }
+
+    .hero h2 {
+        font-size: 1.8em;
+        margin-bottom: 15px;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+        max-width: 800px;
+        margin: auto;
+        background: rgba(0, 0, 0, 0.6);
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+
+    /* This media query applies styles when the screen width is 768px or less */
+
+
+    /* Field of Operation Section */
+    .operation-field {
+        padding: 40px;
+        background: rgb(164, 255, 110);
+        border-radius: 11px;
+        ;
+    }
+
+    .operation-field h1 {
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+
+    .field-container {
+        display: grid;
+        gap: 20px;
+    }
+
+    .operation-item {
+        color: #fff;
+        background: black;
+        padding: 15px;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .operation-item img {
+        width: 100%;
+        max-width: 300px;
+        border-radius: 8px;
+        min-height: 300px;
+    }
+
+    .field_img {
+        background: fixed;
+    }
+
+    /* Major Projects Section */
+    .major-projects {
+        padding: 40px;
+        background: blackks;
+    }
+
+    .major-projects h1 {
+        color: #fff;
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+
+    .project-list {
+        list-style: none;
+        max-width: 800px;
+        margin: auto;
+        font-size: 1.2em;
+    }
+
+    .project-list li {
+        padding: 10px;
+        background: rgb(164, 255, 110);
+        margin-bottom: 10px;
+        border-radius: 8px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+                transform: translateX(-1.05em);
+    }
+
+    @media (min-width:220px) and (max-width:330px) {
+        .field-container {
+            width: 255px;
+            position: relative;
+            right: 15%;
+     
         }
-        .container {
-            max-width: 1200px;
-            margin: auto;
+    }
+
+    
+
+    /* Responsive Grid */
+    @media (max-width: 600px) {
+        .field-container {
+            
+            min-width: 100%;
+            grid-template-columns: minmax(250px,1fr);
+        }
+
+        .hero {
             padding: 20px;
         }
+    }
 
-        /* Hero Section */
-        .hero {
-            text-align: center;
-            padding: 50px;
-            background-image: url("./Photos/Stringing/Complete overhead pole 1280 x 960.jpg");
-            background-size: cover;
-            background-position: center;
-            color: white;
-        }
-        .hero h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-        .hero h2 {
-            font-size: 1.8em;
-            margin-bottom: 15px;
-        }
-        .hero p {
-            font-size: 1.2em;
-            max-width: 800px;
-            margin: auto;
-            background: rgba(0, 0, 0, 0.6);
-            padding: 15px;
-            border-radius: 10px;
-        }
-        
-
-/* This media query applies styles when the screen width is 768px or less */
-    
-
-        /* Field of Operation Section */
-        .operation-field {
-            padding: 40px;
-            background: rgb(164, 255, 110);
-                border-radius: 11px;
-;
-        }
-        .operation-field h1 {
-            text-align: center;
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
+    @media (min-width: 601px) and (max-width: 1024px) {
         .field-container {
-            display: grid;
-            gap: 20px;
+            grid-template-columns: repeat(2, 1fr);
         }
-        .operation-item {
-            color: #fff;
-            background: black;
-            padding: 15px;
-            text-align: center;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .operation-item img {
-            width: 100%;
-            max-width: 300px;
-            border-radius: 8px;
-            min-height: 300px;}
+    }
 
-        .field_img{
-            background: fixed;
+    @media (min-width: 1025px) {
+
+        .drop_menu {
+            width: 40vw;
+
         }
 
-        /* Major Projects Section */
-        .major-projects {
-            padding: 40px;
-            background: blackks;
-        }
-        .major-projects h1 {
-        color: #fff;
-            text-align: center;
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
-        .project-list {
-            list-style: none;
-            max-width: 800px;
-            margin: auto;
-            font-size: 1.2em;
-        }
-        .project-list li {
-            padding: 10px;
-            background: rgb(164, 255, 110);
-            margin-bottom: 10px;
-            border-radius: 8px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        .nav-links {
+            display: flex;
+            justify-content: space-evenly;
         }
 
-        /* Responsive Grid */
-        @media (max-width: 600px) {
-            .field-container {
-                grid-template-columns: 1fr;
-            }
-            .hero {
-                padding: 20px;
-            }
+        .field-container {
+            grid-template-columns: repeat(3, 1fr);
         }
-        @media (min-width: 601px) and (max-width: 1024px) {
-            .field-container {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-        @media (min-width: 1025px) {
-        
-            .drop_menu{
-                width: 40vw;
-                
-            }
-            .nav-links{
-                display: flex;
-                justify-content: space-evenly;
-            }
+    }
 
-            .field-container {
-                grid-template-columns: repeat(3, 1fr);
-            }
-        }
-
-           /* Slideshow Container */
+    /* Slideshow Container */
     .slideshow-container {
         width: 100%;
         overflow: hidden;
@@ -161,20 +190,48 @@
 
     /* CSS Animation for Sliding */
     @keyframes slide {
-        0% { transform: translateX(0%); }
-        20% { transform: translateX(-100%); }
-        40% { transform: translateX(-200%); }
-        60% { transform: translateX(-300%); }
-        80% { transform: translateX(-400%); }
-        100% { transform: translateX(0%); }
+        0% {
+            transform: translateX(0%);
+        }
+
+        20% {
+            transform: translateX(-100%);
+        }
+
+        40% {
+            transform: translateX(-200%);
+        }
+
+        60% {
+            transform: translateX(-300%);
+        }
+
+        80% {
+            transform: translateX(-400%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
     }
 
     /* Fade Effect */
     @keyframes fade {
-        0% { opacity: 1; }
-        15% { opacity: 1; }
-        30% { opacity: 1; }
-        100% { opacity: 1; }
+        0% {
+            opacity: 1;
+        }
+
+        15% {
+            opacity: 1;
+        }
+
+        30% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 1;
+        }
     }
 
     /* Responsive Adjustments */
@@ -184,7 +241,8 @@
             height: 80px;
         }
     }
-/* the style of the flags in 600px - 1024px */
+
+    /* the style of the flags in 600px - 1024px */
     @media (min-width: 601px) and (max-width: 1024px) {
         .flag {
             width: 90px;
@@ -198,47 +256,53 @@
             height: 100px;
         }
     }
-    
-        /* Responsive Footer */
-        .footer {
-            background-color: #426e28;
-            color: white;
-            text-align: center;
-            padding: 30px;
-            margin-top: 40px;
-        }
+
+    /* Responsive Footer */
+    .footer {
+        background-color: #426e28;
+        color: white;
+        text-align: center;
+        padding: 30px;
+        margin-top: 40px;
+    }
+
+    .footer h1 {
+        font-size: 1.8em;
+        margin-bottom: 10px;
+    }
+
+    .footer p {
+        font-size: 1.2em;
+        max-width: 800px;
+        margin: auto;
+        padding: 10px;
+    }
+
+    .btn {
+        display: inline-block;
+        background: #000;
+        color: white;
+        padding: 10px 20px;
+        font-size: 1.2em;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    .btn:hover {
+        background: #444;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 600px) {
         .footer h1 {
-            font-size: 1.8em;
-            margin-bottom: 10px;
-        }
-        .footer p {
-            font-size: 1.2em;
-            max-width: 800px;
-            margin: auto;
-            padding: 10px;
-        }
-        .btn {
-            display: inline-block;
-            background: #000;
-            color: white;
-            padding: 10px 20px;
-            font-size: 1.2em;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .btn:hover {
-            background: #444;
+            font-size: 1.5em;
         }
 
-        /* Responsive Adjustments */
-        @media (max-width: 600px) {
-            .footer h1 {
-                font-size: 1.5em;
-            }
-            .footer p {
-                font-size: 1em;
-            }
-            .btn {
-                font-size: 1em;
-            }
+        .footer p {
+            font-size: 1em;
         }
+
+        .btn {
+            font-size: 1em;
+        }
+    }

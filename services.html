@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Centurion Electrical Lines</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="./nav/nav.css">
+    <link rel="stylesheet" href="styles.css"> <!-- External CSS file -->
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../Photos/Logo/cell_logo.png" alt="CELL Logo">
+            </a>
+        </div>
+        <div class="company-name">
+            <p>CENTURION ELECTRICAL LINES (PTY) LTD</p>
+        </div>
+
+        <!-- Hamburger Menu for Mobile -->
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="../about/About.html">About</a></li>
+            <li><a href="../contact/contact.html">Contact</a></li>
+        </ul>
+
+        <a class="btn btn-primary btn-sm" href="tel:+2779624149" role="button">Call</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="container">
+            <h1>Our Services</h1>
+            <p>Providing expert solutions for electrical infrastructure and maintenance.</p>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="services-container">
+        <h2>What We Offer</h2>
+
+        <div class="service-grid">
+            <div class="service-box">
+                <img src="../Photos/drone 2.jpg" alt="Pole top and foundation inspection">
+                <h3>Pole top & foundation inspection</h3>
+            </div>
+            <div class="service-box">
+                <img src="../Photos/Pole_top_inspections/WhatsApp_Image.jpg" alt="Tower Assembly">
+                <h3>Tower Assembly</h3>
+            </div>
+            <div class="service-box">
+                <img src="../Photos/Pole_top_inspections/edited_grip.png" alt="Line Surveying">
+                <h3>Line Surveying & V-Block setting out</h3>
+            </div>
+            <div class="service-box">
+                <img src="../Photos/Tower_erection/tower_workers.jpg" alt="Tower Erection">
+                <h3>Tower Erection</h3>
+            </div>
+            <div class="service-box">
+                <img src="../Photos/Stringing/machinery_lines.jpg" alt="Stringing">
+                <h3>Stringing</h3>
+            </div>
+            <div class="service-box">
+                <img src="../Photos/refurbishment/new_tower_legs.jpg" alt="Line Rehabilitation">
+                <h3>Line Rehabilitation</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>
