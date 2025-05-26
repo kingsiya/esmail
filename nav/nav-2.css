@@ -1,0 +1,148 @@
+/* General Navigation Styles */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1df59b;
+    padding: 15px 20px;
+}
+
+/* Hamburger Icon */
+.menu-toggle {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    display: none; /* Hidden on larger screens */
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+/* Mobile Menu Styles */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Show menu toggle */
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: rgba(51, 51, 51, 0.9); /* Slight transparency */
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        transform: translateY(-20px); /* Hidden initially */
+        transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+        opacity: 0;
+    }
+
+    /* Active Menu Effects */
+    .nav-links.active {
+        transform: translateY(0); /* Slide in */
+        opacity: 1; /* Fade in */
+    }
+
+    /* Link Hover Effects */
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 10px;
+        transition: background 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    /* 🚀 Advanced Hover Effect - Glow + Lift */
+    .nav-links a:hover {
+        background: linear-gradient(45deg, #1ABC9C, #16A085); /* Gradient glow */
+        transform: translateY(-2px) scale(1.05); /* Subtle lift effect */
+        box-shadow: 0px 4px 10px rgba(26, 188, 156, 0.5); /* Glowing effect */
+    }
+
+    /* Smooth Closing Animation */
+    .nav-links.inactive {
+        transform: translateY(-20px); /* Slide-out */
+        opacity: 0;
+    }
+}
+
+
+/* General Navigation Styles */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0dc225;
+    padding: 15px 40px;
+    color: white;
+    gap: 20px;
+}
+
+/* Logo Section */
+.logo img {
+    height: 50px;
+}
+
+/* Navigation Links (Desktop & Tablet) */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Hover Effect - Subtle lift & color change */
+.nav-links a:hover {
+    background: linear-gradient(45deg, #1ABC9C, #16A085);
+    transform: scale(1.05);
+}
+
+/* Tablet Optimization */
+@media (max-width: 1024px) {
+    nav {
+        padding: 15px 20px;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+    }
+}
+
+/* Mobile Navigation (Hamburger Menu) */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: rgba(18, 252, 76, 0.9);
+        width: 200px;
+        flex-direction: column;
+        transform: translateY(-20px);
+        transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+        opacity: 0;
+    }
+
+    .nav-links.active {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
